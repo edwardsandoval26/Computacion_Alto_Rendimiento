@@ -2,6 +2,9 @@ services:
   model:
     build: .
     container_name: opemmpi-container
+    #Execute 3 commands: 
+    #export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
+    #export OMPI_ALLOW_RUN_AS_ROOT_=1
     command: "tail -f /dev/null"
     volumes:
       - "../:/app"
